@@ -108,7 +108,7 @@ def preparar_datos(provincia, producto, fecha):
 # =========================
 st.divider()
 
-if st.button("🔮 Predecir precio", use_container_width=True):
+if st.button("Predecir precio", use_container_width=True):
     X = preparar_datos(provincia, producto, fecha)
 
     precio = model.predict(X)[0]
