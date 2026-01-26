@@ -97,7 +97,6 @@ def preparar_datos(provincia, producto, fecha):
 
     df = pd.get_dummies(df, drop_first=True)
 
-    # Alinear EXACTAMENTE con el entrenamiento
     df = df.reindex(columns=columns, fill_value=0)
 
     return df
